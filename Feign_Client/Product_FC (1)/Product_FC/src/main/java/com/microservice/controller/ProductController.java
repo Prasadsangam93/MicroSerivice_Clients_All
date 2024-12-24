@@ -26,7 +26,7 @@ public class ProductController {
         return " i am product microservice";
     }
 
-    @PostMapping("/crateProduct")
+    @PostMapping("/createProduct")
     public Product createProducts(@RequestBody Product  product){
         return productService.createProduct(product);
     }
